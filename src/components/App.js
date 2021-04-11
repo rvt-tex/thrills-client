@@ -4,6 +4,7 @@ import ReservationsContainer from './ReservationsContainer';
 import Home from './Home';
 import Tours from './Tours'
 import ReservationList from '../components/ReservationList';
+import Navbar from './components/Navbar';
 import './App.css';
 
 
@@ -17,7 +18,7 @@ function App() {
     
         <Router>
           <div className="App">
-          {/* <Navbar /> */}
+          <Navbar />
             <switch>
               
               <Route exact path="/" component={Home}/>
