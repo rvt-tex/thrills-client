@@ -1,6 +1,6 @@
 import React from 'react';
 import './TourCards.css';
-import CardItem from './CardItem';
+import CardItem from './CardItem.js';
 
 function ToursCards() {
     return (

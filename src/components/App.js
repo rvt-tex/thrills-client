@@ -4,6 +4,7 @@ import ReservationsContainer from './ReservationsContainer';
 import Home from './Home';
 import Tours from './Tours'
 import ReservationList from '../components/ReservationList';
+import './App.css';
 
 
 function App() {
