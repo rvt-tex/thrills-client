@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 function ReservationList ({reservations}) {
     return (
         <div>
-            <h1>Reservations List:</h1>
+            <h1>Reservations List</h1>
             {reservations.map(reservation => 
                 <ul key={reservation.id}>
                     <li >

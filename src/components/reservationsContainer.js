@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import ReservationForm from './ReservationForm';
 import { fetchReservations } from '../actions/reservationsActions'
+import ReservationList from './ReservationList';
 
 
 
@@ -17,6 +18,7 @@ class ReservationsContainer extends Component {
             <div>
                 <h1> Welcome to Reservation Conatiner</h1>
                 <ReservationForm />
+                <ReservationList />
             </div>
         );
     }
