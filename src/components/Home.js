@@ -1,10 +1,14 @@
 import React from 'react';
+import MainSection from './MainSection';
+import TourCards from './ToursCards';
+import {Button} from './Button';
 
 function Home() {
     return (
-        <div>
-            <h1>Wecome To the Index Page</h1>
-        </div>
+        <>
+            <MainSection />
+            <TourCards />
+        </>
     )
 }
 
