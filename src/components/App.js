@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React from 'react';
 import ReservationsContainer from './ReservationsContainer';
 import Home from './Home';
-import Tours from './Tours'
+import ToursList from './ToursList'
 import ReservationList from '../components/ReservationList';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
+import ToursContainer from '../components/ToursContainer';
 import './App.css';
 
 
@@ -22,7 +23,7 @@ function App() {
             <switch>
               
               <Route exact path="/" component={Home}/>
-              <Route path="/tours" component={Tours}/>
+              <Route path="/tours" component={ToursContainer}/>
               <Route path="/reservations" component={ReservationsContainer}/>
               {/* <Route path="/login" component={Login}/>
               <Route path="/profile" component={Profile}/> */}
