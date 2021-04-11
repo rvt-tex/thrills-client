@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 import React from 'react';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
@@ -13,7 +14,7 @@ import { rootReducer } from './reducers/rootReducer'
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
-ReactDom.render(
+ReactDOM.render(
     <Provider store={store}>
         <Router>
             <App />
