@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import ReservationsContainer from './ReservationsContainer';
 
 function App() {
     return (
         <div>
-            Welcome To Home 
+            <ReservationsContainer />
+
         </div>
     )
 }

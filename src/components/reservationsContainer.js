@@ -6,7 +6,7 @@ import { fetchReservations } from '../actions/reservationsActions'
 
 
 
-class reservationsContainer extends Component {
+class ReservationsContainer extends Component {
 
     componentDidMount() {
         this.props.fetchReservations();
@@ -15,12 +15,13 @@ class reservationsContainer extends Component {
     render() {
         return (
             <div>
-                <ReservationForm />
+                testing
+                {/* <ReservationForm /> */}
             </div>
         );
     }
 }
 
-export default connect(null, {fetchReservations})(reservationsContainer);
+export default connect(null, {fetchReservations})(ReservationsContainer);
 
 

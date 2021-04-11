@@ -1,7 +1,7 @@
 
 
 export const fetchReservations = () => {
-    return dispatch => {
+    return (dispatch) => {
         fetch('http://localhost:3000/reservations')
         .then(resp => resp.json())
         .then(reservations => dispatch({ type: 'FETCH_RESERVATIONS', payload: reservations}))
