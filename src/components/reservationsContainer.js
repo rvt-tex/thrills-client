@@ -16,7 +16,7 @@ class ReservationsContainer extends Component {
         return (
             <div>
                 <h1> Welcome to Reservation Conatiner</h1>
-                {/* <ReservationForm /> */}
+                <ReservationForm />
             </div>
         );
     }

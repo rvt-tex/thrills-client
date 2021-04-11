@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './components/Home';
-import ReservationsContainer from './ReservationsContainer';
-import Tours from './components/Tours';
+import Home from '../components/Home';
+import ReservationList from './ReservationList';
+import Tours from '../components/Tours';
 
 
 
@@ -12,7 +12,7 @@ function Router() {
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/tours' component={Tours} />
-                <Route exact path='/reservations' component={ReservationsContainer} />
+                <Route exact path='/reservations' component={ReservationList} />
             </Switch>
         </div>
     )
