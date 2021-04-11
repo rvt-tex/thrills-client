@@ -8,14 +8,14 @@ export const fetchReservations = () => {
     }
 }
 
-// export const addGrad = (grad) => {
-//     return dispatch => {
-//         fetch('http://127.0.0.1:3000/grads', {
-//             method: 'POST',
-//             body: JSON.stringify(grad),
-//             headers: { 'Content-Type': 'application/json'}
-//         })
-//         .then(resp => resp.json())
-//         .then(grad => dispatch({ type: 'ADD_GRAD', payload: grad}))
-//     }
-// }
+export const addReservation = (reservation) => {
+    return (dispatch) => {
+        fetch('http://localhost:3000/reservations', {
+            method: 'POST',
+            body: JSON.stringify(reservation),
+            headers: { 'Content-Type': 'application/json'}
+        })
+        .then(resp => resp.json())
+        .then(reservation => dispatch({ type: 'ADD_RESERVATION', payload: reservation}))
+    }
+}

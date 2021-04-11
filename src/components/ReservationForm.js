@@ -1,7 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
 import { connect } from 'react-redux'
-
 import { addReservation } from '../actions/reservationsActions'
 
 class ReservationsForm extends Component {
@@ -14,17 +13,17 @@ class ReservationsForm extends Component {
         client_id: ''
     }
 
-    // handleChange = e => {
-    //     const { name, value } = e.target
-    //     this.setState({
-    //         [name]: value
-    //     })
-    // }
+    handleChange = e => {
+        const { name, value } = e.target
+        this.setState({
+            [name]: value
+        })
+    }
 
-    // handleSubmit = e => {
-    //     e.preventDefault()
-    //     this.props.addGrad(this.state)
-    // }
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addReservation(this.state)
+    }
 
     render() {
         return (
@@ -43,6 +42,10 @@ class ReservationsForm extends Component {
 
                 <label>Tour_id</label>
                 <input type='text' value={this.state.tour_id} onChange={this.handleChange} name='tour_id'/>
+                <br/>
+
+                <label>Client_id</label>
+                <input type='text' value={this.state.client_id} onChange={this.handleChange} name='client_id'/>
                 <br/>
 
                 <input type='submit' value='Create Reservation' />

@@ -15,7 +15,7 @@ class ReservationsContainer extends Component {
     render() {
         return (
             <div>
-                testing
+                <h1> Welcome to Reservation Conatiner</h1>
                 {/* <ReservationForm /> */}
             </div>
         );
