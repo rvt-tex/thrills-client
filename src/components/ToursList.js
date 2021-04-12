@@ -1,59 +1,26 @@
-// import React from 'react';
-// import { useState, useEffect } from 'react';
-
-
-// function Tours() {
-
-//   const url = 'http://localhost:3000/tours';
-//   const [ data, setData ] = useState([]);
-
-
-//   useEffect(() => {
-//       loadData();
-//   }, [url])
-
-//   const loadData = async () => {
-//     await fetch(url)
-//     .then(response => response.json())
-//     .then(returnedData => setData(returnedData));
-//   }
-
-//   return (
-//     <div>
-//       {data.map(tour => (
-//         <div key={tour.id}>
-//           <h1 className="text-2xl font-bold mb-3">{tour.title} </h1>
-//           <img src={tour.img} />
-//           <p>{tour.description}</p>
-//           <p>{tour.duration} | ${tour.price}</p>
-//         </div>
-        
-//       ))}
-//     </div>
-//   );
-
-// }
-
-// export default Tours;
-
 import React from 'react';
 import { connect } from 'react-redux';
+import './ToursList.css';
+import './App.css';
 
 function ToursList ({tours}) {
     return (
-        <div>
-            <h1>Tours List</h1>
+        <div> 
+          
             {tours.map(tour => 
-                <ul key={tour.id}>
-                    <li >
-                        {tour.title}  
-                        <img src={tour.img} />  
-                        {tour.description} 
-                        {tour.duration} | {tour.price}
-                    </li>
-                </ul>
-            )}
+                <div>
+                    <div className="container">
+                    <div class="title"><h1>{tour.title}</h1> </div>
+                        <ul className='tours-lists-items' key={tour.id}><br></br>
+                            <div> <img src={tour.img} class="rounded"/> </div> 
+                            <div className='desc'>{tour.description}</div>
+                            <p className='desc'> {tour.duration} | ${tour.price} </p>
+                        </ul>
+                    </div>
+                    </div>
+            )} 
         </div>
+                            
     );
 };
 
@@ -63,3 +30,5 @@ const mapStateToProps = state => {
 
 
 export default connect(mapStateToProps)(ToursList);
+
+
