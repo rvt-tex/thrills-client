@@ -28,25 +28,32 @@ class ReservationsForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>Desired_date</label>
+
+                <div class="form-group">
+                <label>Tour </label><br></br>
+                <input type='text' value={this.state.tour_id} onChange={this.handleChange} name='tour_id'/>
+                </div><br/>
+               
+        
+                <div class="form-group">
+                <label>Desired Date </label><br></br>
                 <input type='text' value={this.state.desired_date} onChange={this.handleChange} name='desired_date'/>
                 <br/>
 
-                <label>Desired_time</label>
+                
+                <label>Desired Time </label><br></br>
                 <input type='text' value={this.state.desired_time} onChange={this.handleChange} name='desired_time'/>
                 <br/>
 
-                <label>Special_request</label>
+               
+                <label>Special Request </label><br></br>
                 <input type='text' value={this.state.special_request} onChange={this.handleChange} name='special_request'/>
                 <br/>
 
-                <label>Tour_id</label>
-                <input type='text' value={this.state.tour_id} onChange={this.handleChange} name='tour_id'/>
-                <br/>
-
-                <label>Client_id</label>
+                
+                <label>Client Name </label><br></br>
                 <input type='text' value={this.state.client_id} onChange={this.handleChange} name='client_id'/>
-                <br/>
+                </div><br/>
 
                 <input type='submit' value='Create Reservation' />
 
