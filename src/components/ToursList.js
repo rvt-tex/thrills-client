@@ -1,26 +1,38 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './ToursList.css';
-import './App.css';
+import { Link } from 'react-router-dom';
+import {Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, Row, Col,  CardBody} from 'reactstrap';
+
+
+
 
 function ToursList ({tours}) {
+
+    function makeRes () {
+        console.log('you have been cliced');    
+    }
+
     return (
-        <div> 
-          
-            {tours.map(tour => 
-                <div>
-                    <div className="container">
-                    <div class="title"><h1>{tour.title}</h1> </div>
-                        <ul className='tours-lists-items' key={tour.id}><br></br>
-                            <div> <img src={tour.img} class="rounded" width= '800px' height='600px' /> </div> 
-                            <div className='desc'>{tour.description}</div>
-                            <p className='desc'> {tour.duration} | ${tour.price} </p>
-                        </ul>
-                    </div>
-                    </div>
-            )} 
-        </div>
-                            
+        <CardDeck> 
+            <Card>
+                <Row>
+                    {tours.map(tour => 
+                        <Col md="6">
+                            <CardBody>
+                                <CardTitle tag="h5">{tour.title}</CardTitle>
+                                    <ul className='tours-lists-items' key={tour.id}><br></br>
+                                        <CardImg src={tour.img} class="rounded" width='600px' height='450px' />
+                                        <CardText>{tour.description}</CardText>
+                                        <CardSubtitle tag="h6" className="mb-2"> {tour.duration} | ${tour.price} </CardSubtitle>
+                                        <Link to='/Reservations' color="primary" size="sm" onClick={makeRes}>RESERVE</Link>
+                                    </ul>
+                            </CardBody>
+                        </Col>
+                    )} 
+                </Row>
+            </Card>
+        </CardDeck>         
     );
 };
 
@@ -30,5 +42,6 @@ const mapStateToProps = state => {
 
 
 export default connect(mapStateToProps)(ToursList);
+
 
 

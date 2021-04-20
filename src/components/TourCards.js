@@ -2,11 +2,12 @@ import React from 'react';
 import './TourCards.css';
 import CardItem from './CardItem.js';
 
+
 function ToursCards() {
     return (
 
         <div className='tour-cards'>
-            <h1>Check out these Epic Adventures!</h1>
+            <h1>THRILLS EPIC TOURS!</h1>
                 <div className='tour-cards-container'>
                     <div className='tour-cards-wrapper'>
                         <ul className='cards-items'>
@@ -16,7 +17,7 @@ function ToursCards() {
                                 description='Explore the hidden lagoon deep inside the hills'
                                 duration='8-12 hours'
                                 price='$150 per person'
-                                label='Adventure'
+                                label='Nature'
                                 path='/tours'
                             />
                             <CardItem
@@ -36,7 +37,7 @@ function ToursCards() {
               description='Explore breathe taking water falls and exotic trails '
               duration='6-8 hours'
               price='$150 per person'
-              label='Adventure'
+              label='Scenic'
               path='/tours'
             />
             <CardItem
@@ -54,7 +55,7 @@ function ToursCards() {
               description='Have best seafood in town on the peir while watching the sunset'
               duration='4-6 hours'
               price='$70 per person'
-              label='Adventure'
+              label='NightLife'
               path='/tours'
             />
           </ul>

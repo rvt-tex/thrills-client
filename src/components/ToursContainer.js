@@ -15,7 +15,7 @@ class ToursContainer extends Component {
     render() {
         return (
             <div>
-                <h1> Welcome to Tours Conatiner</h1>
+                <h1>OUR TOURS</h1>
             
                 <ToursList />
             </div>

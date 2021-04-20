@@ -6,23 +6,15 @@ function MainSection() {
     return (
         <div className='main-container'>
             
-        <h1>WELCOME TO JA</h1>
-        <p>Party Capital of the World</p>
+        <h1>WELCOME TO THRILLS JAMAICA</h1>
+        <p>The Home of the most Exotic Destinations in the Carribbean</p>
 
         <div className='main-btns'>
             <Button
                 className='btns'
-                buttonStyle='btn--outline'
-                buttonSize='btn--large'
-            >GET STARTED
-            </Button>
-            <Button
-                className='btns'
                 buttonStyle='btn--primary'
                 buttonSize='btn--large'
-                // onClick={console.log('clicking the home page link')}
-            >WATCH TRAILER <i className='far fa-play-circle' />
-            </Button>
+            >OUR TOURS</Button>
         </div>
 
         </div>

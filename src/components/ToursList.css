@@ -105,19 +105,29 @@
     }
 } */
 
-.tour-list-container {
+/* .tour-list-container {
+    background: url('https://www.beaches.com/blog/content/images/2019/11/Beaches-Negril-Seven-Mile-Beach-Aerial3-1.jpg') center center/cover no-repeat;
     display: flex;
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
-} 
+}  */
+div.container{
+    background: url('https://www.roadaffair.com/wp-content/uploads/2017/09/winnifred-beach-port-antonio-jamaica-road-affair.jpg') center center/cover no-repeat;
+    margin-bottom: 36px;
+}
+
+.tours-lists-items {
+    background: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2016%2F03%2Fjamaica-inn-JAMAICA0316.jpg') center center/cover no-repeat;
+    margin-bottom: 36px;
+}
 
 h1 {
     text-align: center;
 }
-div.container {
+container {
     border: 3px solid #ccc;
 }
   
