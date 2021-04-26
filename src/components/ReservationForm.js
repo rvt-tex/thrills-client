@@ -46,10 +46,32 @@ class ReservationsForm extends Component {
                     <Container fluid>   
             <form onSubmit={this.handleSubmit}>
 
-                <div class="form-group">
+            <fieldset>
+            <label>
+            <p>TOURS</p>
+            <select name="tour_id" onChange={this.handleChange}>
+                <option value="">--Please choose an option--</option>
+                <option value="1">Airport Transfer</option>
+                <option value="2">Negril Party Bus</option>
+                <option value="3">Ocho Rios Highlight</option>
+                <option value="4">Far East</option>
+                <option value="5">City</option>
+                <option value="6">Montego Bay Highlights</option>
+                <option value="7">Country Side</option>
+                <option value="8">Farm</option>
+                <option value="9">Bamboo Rafting</option>
+                <option value="10">Horse Back Riding</option>
+                <option value="11">Swimming with the Dolphins</option>
+                <option value="12">Luminous Lagoons</option>
+                <option value="13">Montego Bay Night Life</option>
+            </select>
+            </label>
+            </fieldset>
+
+                {/* <div class="form-group">
                 <label>Tour </label><br></br>
                 <input type='text' value={this.state.tour_id} onChange={this.handleChange} name='tour_id'/> 
-                </div><br/>
+                </div><br/> */}
                
         
                 <div class="form-group">

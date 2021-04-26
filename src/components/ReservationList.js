@@ -1,11 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Jumbotron, Container } from 'reactstrap';
-import {deleteReservation} from '../actions/reservationsActions'
+import {deleteReservation} from '../actions/reservationsActions';
+import moment from 'moment-timezone/builds/moment-timezone-with-data-2012-2022';
+
 
 
 function ReservationList ({reservations, deleteReservation}) {
-
+ console.log(reservations)
+    moment().format();
     
     return (
         <div>
@@ -17,6 +20,7 @@ function ReservationList ({reservations, deleteReservation}) {
                     <div class="row row-cols-1 row-cols-md-2">
                     
             	{reservations.map(reservation => 
+               
 		        <div class="col mb-4">
 		            <div class="card">
                 	<div key={reservation.id}>
@@ -38,14 +42,9 @@ function ReservationList ({reservations, deleteReservation}) {
                      </div>
                      
             )}
-
-
- 
-
-
-           </div>
-           </Container>
-                </Jumbotron>
+            </div>
+            </Container>
+            </Jumbotron>
             </div>
     );
 };
