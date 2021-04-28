@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { addReservation } from '../actions/reservationsActions'
 import { Jumbotron, Container } from 'reactstrap';
 import { Form, Field } from "@leveluptuts/fresh";
+import Moment from 'moment';
 
 
 class ReservationsForm extends Component {
@@ -13,7 +14,7 @@ class ReservationsForm extends Component {
         desired_time: '',
         special_request: '',
         tour_id: '',
-        client_id: ''
+        client_id: '',
     }
     
     handleChange = e => {

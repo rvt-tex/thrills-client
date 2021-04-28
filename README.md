@@ -1,71 +1,31 @@
-# Getting Started with Create React App
+Thrills App
+This application was designed for adventure or thrill seeking individuals who visit the island of Jamamica. The app was made with React.js & Redux which was used as the frontend and it connects to a Rails API on the Backend through Redux-Thunk. Using CSS and bootstrap for styling.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Installing To run this app locally, fork and clone the frontend GitHub repo and the backend Github repo to your local machine. https://github.com/rvt-tex/thrills-api https://github.com/rvt-tex/thrills-client
 
-In the project directory, you can run:
+Change directories into the backend local directory. Run bundle install to install dependencies, and rails db:migrate and rails db:seed to create and seed the database.
 
-### `yarn start`
+$cd tex-luxury-pins-backend $bundle install $rails db:migrate $rails db:seed Run $rails s to start a web server and access the app in a web browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Change directories into the client(frontend) local directory. Run the following comands;
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+npm install
+npm start
+If you need to install npm first install homebrew and then node (for MacOs).
 
-### `yarn test`
+Libraries and Packeges
+Some of the libraries and packages used in this project are:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React 16.13.1
+React Router Dom 5.2.0
+Redux 4.0.5
+Redux-Thunk 2.3.0
+Redux DevTools Extension 2.13.8
+React Dom 16.13.1
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bug reports and pull requests are welcome on GitHub at https://github.com/rvt-tex/thrills-client or at https://github.com/rvt-tex/thrills-api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+License This project is licensed under the MIT License - see the LICENSE.md file for details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# thrills-client

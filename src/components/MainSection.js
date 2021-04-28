@@ -7,7 +7,7 @@ function MainSection() {
         <div className='main-container'>
             
         <h1>WELCOME TO THRILLS JAMAICA</h1>
-        <p>The Home of the most Exotic Destinations in the Carribbean</p>
+        <p>The Home of the most Exotic Tours in the Carribbean</p>
 
         <div className='main-btns'>
             <Button

@@ -2,14 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Jumbotron, Container } from 'reactstrap';
 import {deleteReservation} from '../actions/reservationsActions';
-import moment from 'moment-timezone/builds/moment-timezone-with-data-2012-2022';
 
 
 
 function ReservationList ({reservations, deleteReservation}) {
  console.log(reservations)
-    moment().format();
     
+
     return (
         <div>
               <Jumbotron fluid>
@@ -28,6 +27,9 @@ function ReservationList ({reservations, deleteReservation}) {
                     	<h5 class="card-title">Tour #: {reservation.tour_id} </h5>     
                         <p class="card-text">Special Request: {reservation.special_request} </p>  
                         <p class="card-text">Client: {reservation.client_id}</p>  
+
+                     
+
                         <p class="card-text">Date: {reservation.desired_date}  </p>  
                         <p class="card-text">Time: {reservation.desired_time} </p>
                       
