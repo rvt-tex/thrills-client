@@ -1,4 +1,9 @@
 // import { useParams } from 'react-router';
+import { FETCH_RESERVATIONS } from '../reducers/reservationsReducer.js';
+import { ADD_RESERVATION } from '../reducers/reservationsReducer.js';
+import { EDIT_RESERVATION } from '../reducers/reservationsReducer.js';
+import { DELETE_RESERVATION } from '../reducers/reservationsReducer.js';
+
 
 export const fetchReservations = () => {
     

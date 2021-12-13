@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux'
-import { reservationsReducer } from './reservationsReducer'
-import { clientsReducer } from './clientsReducer'
+import { combineReducers } from 'redux';
+import { reservationsReducer } from './reservationsReducer';
+import { clientsReducer } from './clientsReducer';
 import { toursReducer } from './toursReducer';
 
 
