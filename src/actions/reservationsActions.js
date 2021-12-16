@@ -1,4 +1,4 @@
-// import { useParams } from 'react-router';
+
 import { FETCH_RESERVATIONS } from '../reducers/reservationsReducer.js';
 import { ADD_RESERVATION } from '../reducers/reservationsReducer.js';
 import { EDIT_RESERVATION } from '../reducers/reservationsReducer.js';
@@ -8,8 +8,6 @@ import { DELETE_RESERVATION } from '../reducers/reservationsReducer.js';
 export const fetchReservations = () => {
     
     return (dispatch) => {
-        // const { id } = useParams();
-        // fetch(`http://localhost:3000/clients/${id}/reservations`)
         fetch('http://localhost:3000/reservations')
         .then(resp => resp.json())
         .then(reservations => dispatch({ type: 'FETCH_RESERVATIONS', payload: reservations}))

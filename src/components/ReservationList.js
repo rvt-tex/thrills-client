@@ -14,7 +14,6 @@ function ReservationList ({reservations, deleteReservation}) {
               <div class="card">
                     <Container fluid>   
             
-                     {/* <h1>Current Reservations List</h1>  */}
                     {reservations.length ? <h1>{reservations.length} Reservations </h1> : <h1>No Reservations</h1>}
                     <div class="row row-cols-1 row-cols-md-2">
                     
@@ -32,16 +31,9 @@ function ReservationList ({reservations, deleteReservation}) {
                    
                    <br /> <br />
 
-                    	{/* <h5 class="card-title">Tour: {reservation.tour.title} </h5>     
-                        <p class="card-text">Date: {reservation.desired_date}  </p>  
-                        <p class="card-text">Time: {reservation.desired_time} </p>
-                        <p class="card-text">Special Request: {reservation.special_request} </p>  
-                        <p class="card-text">Client: {reservation.client.first_name}</p>   */}
- 
-                        {/* <button onClick={() => handleEdit(reservation)}> Edit </button>   */}
-                        {/* <button onClick={() => deleteReservation(reservation)}>Delete</button> */}
+                  
                         <button type="button" class="btn btn-primary btn-sm" onClick={() => deleteReservation(reservation)}>Delete</button>
-                        {/* <btn onClick={this.deleteHandler.bind(this, i)} className="btn btn-danger btn-sm">Delete</btn> */}
+        
 		            </div> 
                 	</div>
                      </div>

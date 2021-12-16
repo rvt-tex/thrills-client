@@ -11,10 +11,6 @@ import './App.css';
 
 function App() {
    
-    // const handleLogout = () => {
-    //     clearToken()
-    //   }
-
     return (
     
         <Router>
@@ -25,12 +21,8 @@ function App() {
               <Route exact path="/" component={Home}/>
               <Route path="/tours" component={ToursContainer}/>
               <Route path="/reservations" component={ReservationsContainer}/>
-              {/* <Route path="/login" component={Login}/>
-              <Route path="/profile" component={Profile}/> */}
-    
+      
             </switch>
-    
-            {/* <button onClick={handleLogout}>Log Out</button> */}
           </div>
         </Router>
         
