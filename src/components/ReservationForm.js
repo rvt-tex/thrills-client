@@ -40,7 +40,8 @@ class ReservationForm extends Component {
     render() {
         return (
 
-            <div class="card-columns">
+            <div class="container">
+                <div class="card">
             <form onSubmit={this.handleSubmit}>
                
             <fieldset>
@@ -78,6 +79,7 @@ class ReservationForm extends Component {
                 <br />
                 <input type='submit' value="Create" />
             </form>
+            </div>
             </div>
         )
     }

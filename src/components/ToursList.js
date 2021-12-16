@@ -10,10 +10,12 @@ import {Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, Row,
 function ToursList ({tours}) {
 
     function makeRes () {
-        console.log('you have been cliced');    
+        console.log('you have been cliced place link to reservation form to select actual tour' );    
     }
 
     return (
+        
+      
         <CardDeck> 
             <Card>
                 <Row>
@@ -32,7 +34,10 @@ function ToursList ({tours}) {
                     )} 
                 </Row>
             </Card>
-        </CardDeck>         
+        </CardDeck>     
+
+      
+       
     );
 };
 
